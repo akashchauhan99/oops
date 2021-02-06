@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int fibonacci(int n){
+    static int zero=0,one=1,f;
+    if(n>0){
+        f = zero+one;
+        zero=one;
+        one=f;
+        cout<<f<<" ";
+        fibonacci(n-1);
+    }
+    return 0;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+
+    cout<<"Fibonacci Series: ";
+    cout<<"0 "<<"1 ";
+
+    fibonacci(n-2);
+    return 0;
+}
