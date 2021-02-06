@@ -1,0 +1,79 @@
+
+
+#include<iostream>
+
+
+using namespace std;
+
+
+// struct employee
+
+
+// {
+
+
+//     int eid;
+
+
+//     int salary;
+
+
+// };
+
+
+
+// Another way to define struct
+
+
+typedef struct employee
+
+
+{
+
+
+    int eid;
+
+
+    int salary;
+
+
+} ep;
+
+
+int main(){
+
+
+    struct employee abc;
+
+
+    // New way
+
+
+    ep bcd;
+
+
+    abc.eid = 1;
+
+
+    abc.salary = 1000000;
+
+
+    bcd.eid = 2;
+
+
+    bcd.salary = 1290000;
+
+
+    cout<<"Employee id is "<<abc.eid<<endl;
+
+
+    cout<<"Employee salary is "<<abc.salary<<endl;
+
+
+    cout<<"Employee id is "<<bcd.eid<<endl;
+
+
+    cout<<"Employee salary is "<<bcd.salary<<endl;
+
+
+}
