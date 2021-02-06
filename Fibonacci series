@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int fibonacci(int);
+int main(){
+
+    int n;
+
+    cout<<"Enter the number : ";
+    cin>>n;
+
+    fibonacci(n);
+
+
+    return 0;
+}
+
+int fibonacci(int n){
+    int zero=0,one=1,f;
+
+    cout<<zero<<" "<<one<<" ";
+    for(int i=2;i<n;++i){
+        f = zero+one;
+        cout<<f<<" ";
+        zero=one;
+        one=f;
+    }
+    return 0;
+}
