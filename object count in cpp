@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+using namespace std;
+class s{
+public:
+static int a;
+s(){
+a++;
+}
+void show(){
+cout<<"\nNumber of object is : "<<a;
+//cout<<"\na = "<<a<<"\nb = "<<b;
+}};
+int s::a;
+void main(){
+clrscr();
+s x;
+x.show();
+s y;
+y.show();
+s z;
+z.show();
+getch();
+}
+
